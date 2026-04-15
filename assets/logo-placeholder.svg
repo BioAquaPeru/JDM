@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" role="img" aria-labelledby="title desc">
+  <title id="title">Logo referencial Jesús Divino Maestro</title>
+  <desc id="desc">Escudo institucional referencial editable.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e4c874"/>
+      <stop offset="100%" stop-color="#c9a646"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#254ba8"/>
+      <stop offset="100%" stop-color="#1f3c88"/>
+    </linearGradient>
+  </defs>
+  <path d="M160 14 286 58v108c0 79-53 143-126 180C87 309 34 245 34 166V58L160 14Z" fill="url(#gold)"/>
+  <path d="M160 40 264 76v89c0 65-43 118-104 151-61-33-104-86-104-151V76L160 40Z" fill="url(#blue)"/>
+  <circle cx="160" cy="137" r="46" fill="#f5f0e6"/>
+  <path d="M160 108c13 0 23 10 23 23s-10 23-23 23-23-10-23-23 10-23 23-23Z" fill="#c9a646"/>
+  <rect x="94" y="212" width="132" height="18" rx="9" fill="#f5f0e6"/>
+  <text x="160" y="235" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f3c88">JDM</text>
+  <text x="160" y="270" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="18" fill="#f5f0e6">LOGO REFERENCIAL</text>
+</svg>

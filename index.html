@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Colegio de educación inicial y primaria con formación integral, valores y enfoque académico de calidad."
+  >
+  <title>Jesús Divino Maestro | Educación Inicial y Primaria</title>
+  <!-- Reemplaza assets/favicon-placeholder.svg por el icono real del colegio -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon-placeholder.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1.5 1.5 0 0 1 1.5-.4c1 .3 2 .5 3.1.5a1.5 1.5 0 0 1 1.5 1.5V20a1.5 1.5 0 0 1-1.5 1.5A18 18 0 0 1 2.5 4A1.5 1.5 0 0 1 4 2.5h3.2A1.5 1.5 0 0 1 8.7 4c0 1.1.2 2.1.5 3.1a1.5 1.5 0 0 1-.4 1.5l-2.2 2.2Z" fill="currentColor"></path>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <path d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5v-13Zm2.2.5L12 11.1 18.8 6H5.2Zm13.8 1.9-6.4 4.8a1 1 0 0 1-1.2 0L5 7.9v10.6c0 .3.2.5.5.5h13c.3 0 .5-.2.5-.5V7.9Z" fill="currentColor"></path>
+    </symbol>
+    <symbol id="icon-location" viewBox="0 0 24 24">
+      <path d="M12 22s7-6.3 7-12a7 7 0 1 0-14 0c0 5.7 7 12 7 12Zm0-9a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" fill="currentColor"></path>
+    </symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path d="M19.1 4.9A9.9 9.9 0 0 0 3.9 17.1L2.5 21.5l4.5-1.3A9.9 9.9 0 1 0 19.1 4.9Zm-7.2 15a8 8 0 0 1-4.1-1.1l-.3-.2-2.7.8.8-2.6-.2-.3A8 8 0 1 1 11.9 19.9Zm4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.6.1-.7.8-.8.9-.3.2-.5.1a6.4 6.4 0 0 1-3.2-2.8c-.2-.3 0-.4.1-.6l.4-.5a1 1 0 0 0 .1-.6c0-.2-.6-1.5-.9-2s-.5-.4-.6-.4h-.5c-.2 0-.6.1-.9.4s-1.1 1.1-1.1 2.6 1.1 3 1.2 3.2c.2.2 2.1 3.3 5.2 4.5 2.5 1 3 1 3.6.9.5-.1 1.4-.6 1.6-1.2s.2-1.1.2-1.2-.2-.2-.4-.4Z" fill="currentColor"></path>
+    </symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24">
+      <path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.2-1.6 1.5-1.6h1.4V4.8c-.2 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.8V11H8.5v3h2.2v7h2.8Z" fill="currentColor"></path>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm0 2A2 2 0 0 0 5 7v10c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7Zm10.5 1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" fill="currentColor"></path>
+    </symbol>
+    <symbol id="icon-youtube" viewBox="0 0 24 24">
+      <path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30.5 30.5 0 0 0 2 12a30.5 30.5 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30.5 30.5 0 0 0 22 12a30.5 30.5 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z" fill="currentColor"></path>
+    </symbol>
+  </svg>
+
+  <a class="floating-whatsapp" href="https://wa.me/51912987664" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <img src="assets/whatsapp-icon.png" alt="WhatsApp">
+  </a>
+
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-info">
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-phone"></use></svg>Tel: +51 912 876 664</span>
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-mail"></use></svg>jdivinomaestro@gmail.com</span>
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-location"></use></svg>Av. Saul Cantoral</span>
+      </div>
+      <a class="topbar-whatsapp" href="https://wa.me/51912987664" target="_blank" rel="noopener noreferrer">
+        <img src="assets/whatsapp-icon.png" alt="" aria-hidden="true">
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header-content">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
+        <!-- Reemplaza assets/logo-placeholder.svg por el logo real del colegio -->
+        <div class="brand-logo">
+          <img src="assets/logo-placeholder.png" alt="Logo referencial del colegio Jesús Divino Maestro">
+        </div>
+        <div class="brand-copy">
+          <strong>Jesús Divino Maestro</strong>
+          <small>Educación Inicial y Primaria</small>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#niveles">Niveles</a>
+        <a href="#admision">Admisión</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="btn btn-primary header-cta" href="#admision">Matrícula abierta</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <!-- Reemplaza assets/hero-colegio.jpg por tu foto principal del colegio -->
+      <div class="hero-overlay"></div>
+      <div class="container hero-content reveal">
+        <span class="hero-tag">Educación con excelencia y calidez</span>
+        <h1>Formando el futuro con valores y educación de calidad</h1>
+        <p>Educación inicial y primaria con enfoque integral, acompañamiento cercano y experiencias de aprendizaje significativas.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contacto">Solicitar información</a>
+          <a class="btn btn-secondary" href="#niveles">Ver niveles</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Por qué elegirnos</span>
+          <h2>Una propuesta educativa pensada para crecer con seguridad y confianza</h2>
+          <p>Integramos formación académica, emocional y humana en un entorno moderno, cercano y estimulante.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            
+            <h3>Educación personalizada</h3>
+            <p>Atendemos el ritmo y las fortalezas de cada estudiante para potenciar su aprendizaje.</p>
+          </article>
+          <article class="feature-card reveal">
+           
+            <h3>Docentes capacitados</h3>
+            <p>Contamos con profesionales comprometidos con metodologías activas y acompañamiento constante.</p>
+          </article>
+          <article class="feature-card reveal">
+          
+            <h3>Ambiente seguro</h3>
+            <p>Brindamos espacios ordenados, protegidos y diseñados para el bienestar integral de los niños.</p>
+          </article>
+          <article class="feature-card reveal">
+            
+            <h3>Formación en valores</h3>
+            <p>Promovemos respeto, responsabilidad, empatía y convivencia positiva dentro y fuera del aula.</p>
+          </article>
+          <article class="feature-card reveal">
+           
+            <h3>Actividades recreativas</h3>
+            <p>Complementamos el aprendizaje con arte, deporte, juegos y experiencias participativas.</p>
+          </article>
+          <article class="feature-card reveal">
+           
+            <h3>Familia y comunidad</h3>
+            <p>Fomentamos una relación cercana con las familias para construir una educación colaborativa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section levels-section" id="niveles">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Niveles educativos</span>
+          <h2>Acompañamos cada etapa del aprendizaje</h2>
+        </div>
+
+        <div class="levels-grid">
+          <article class="level-card reveal">
+            <!-- Reemplaza la imagen por una foto real del nivel inicial -->
+            <div class="card-image">
+              <img
+                src="galeria/inicial1.jpg"
+                alt="Estudiantes del nivel inicial"
+              >
+            </div>
+            <div class="level-content">
+              <span class="badge">Inicial | 3 a 5 años</span>
+              <h3>Nivel Inicial</h3>
+              <p>Desarrollamos autonomía, lenguaje, motricidad, creatividad y socialización mediante experiencias lúdicas y significativas.</p>
+              <ul>
+                <li>Estimulación temprana y aprendizaje activo</li>
+                <li>Ambientes cálidos y seguros</li>
+                <li>Desarrollo emocional y social</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="level-card reveal">
+            <!-- Reemplaza la imagen por una foto real del nivel primaria -->
+            <div class="card-image">
+              <img
+                src="galeria/primaria.jpg"
+                alt="Estudiantes del nivel primaria"
+              >
+            </div>
+            <div class="level-content">
+              <span class="badge">Primaria | 6 a 12 años</span>
+              <h3>Nivel Primaria</h3>
+              <p>Fortalecemos competencias académicas, pensamiento crítico, trabajo colaborativo y una formación integral con valores.</p>
+              <ul>
+                <li>Comunicación, matemática y ciencia</li>
+                <li>Proyectos creativos y tecnológicos</li>
+                <li>Acompañamiento tutorial permanente</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <span class="section-kicker">Nosotros</span>
+          <h2>Educamos con propósito, cercanía y visión de futuro</h2>
+          <div class="about-block">
+            <h3>Misión</h3>
+            <p>Formar estudiantes íntegros, seguros y comprometidos con su entorno, a través de una educación innovadora y humanista.</p>
+          </div>
+          <div class="about-block">
+            <h3>Visión</h3>
+            <p>Ser una institución referente por su excelencia académica, formación en valores y atención cercana a cada familia.</p>
+          </div>
+          <div class="about-block">
+            <h3>Valores</h3>
+            <p>Respeto, responsabilidad, solidaridad, empatía, honestidad y amor por el aprendizaje.</p>
+          </div>
+        </div>
+        <div class="about-visual reveal">
+          <article class="about-photo-card">
+            <!-- Reemplaza la imagen por una foto institucional del colegio -->
+            <img
+              src="galeria/taller.jpg"
+              alt="Imagen institucional del colegio"
+            >
+            <div class="about-highlight">
+              <strong>Jesús Divino Maestro</strong>
+              <span>Una comunidad educativa que forma con valores, cercanía y excelencia.</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Galería</span>
+          <h2>Espacios y momentos que inspiran aprendizaje</h2>
+        </div>
+        <div class="gallery-grid">
+          <article class="gallery-item reveal">
+            <!-- Reemplaza por fotos reales del colegio -->
+            <img class="gallery-photo" src="galeria/taller.jpg" alt="Actividad en el aula">
+            <div class="gallery-caption">
+              <h3>Aprendizaje en aula</h3>
+              <p>Experiencias guiadas con participación activa de los estudiantes.</p>
+            </div>
+          </article>
+          <article class="gallery-item reveal">
+            <img class="gallery-photo" src="galeria/deporte1.jpg" alt="Trabajo colaborativo">
+            <div class="gallery-caption">
+              <h3>Trabajo colaborativo</h3>
+              <p>Dinámicas grupales que fortalecen la convivencia y la creatividad.</p>
+            </div>
+          </article>
+          <article class="gallery-item reveal">
+            <img class="gallery-photo" src="galeria/deporte2.jpg" alt="Lectura y expresión">
+            <div class="gallery-caption">
+              <h3>Lectura y expresión</h3>
+              <p>Espacios que motivan la comunicación y el gusto por aprender.</p>
+            </div>
+          </article>
+          <article class="gallery-item reveal">
+            <img class="gallery-photo" src="galeria/deporte.jpg" alt="Ambiente seguro">
+            <div class="gallery-caption">
+              <h3>Ambiente seguro</h3>
+              <p>Infraestructura preparada para el bienestar y desarrollo integral.</p>
+            </div>
+          </article>
+          <article class="gallery-item reveal">
+            <img class="gallery-photo" src="galeria/evento1.jpg" alt="Arte y recreación">
+            <div class="gallery-caption">
+              <h3>Arte y recreación</h3>
+              <p>Momentos de juego, descubrimiento y expresión creativa.</p>
+            </div>
+          </article>
+          <article class="gallery-item reveal">
+            <img class="gallery-photo" src="galeria/evento2.jpg" alt="Comunidad educativa">
+            <div class="gallery-caption">
+              <h3>Comunidad educativa</h3>
+              <p>Actividades que integran a estudiantes, docentes y familias.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section news-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Noticias</span>
+          <h2>Lo más reciente de nuestra comunidad educativa</h2>
+        </div>
+        <div class="news-carousel reveal" id="newsCarousel">
+          <button class="carousel-btn carousel-btn-prev" type="button" id="newsPrev" aria-label="Ver noticias anteriores">‹</button>
+          <div class="news-track-wrapper">
+            <div class="news-track" id="newsTrack">
+              <article class="news-card">
+                <!-- Reemplaza por imagen real de noticia -->
+                <div class="card-image">
+                  <img src="galeria/deporte1.jpg" alt="Semana de integración familiar">
+                </div>
+                <div class="news-content">
+                  <span class="badge">Eventos</span>
+                  <h3>Semana de integración familiar</h3>
+                  <p>Compartimos juegos, dinámicas y actividades que fortalecen el vínculo entre escuela y hogar.</p>
+                </div>
+              </article>
+              <article class="news-card">
+                <div class="card-image">
+                  <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80" alt="Proceso de matrícula 2026">
+                </div>
+                <div class="news-content">
+                  <span class="badge">Avisos</span>
+                  <h3>Proceso de matrícula 2026 abierto</h3>
+                  <p>Ya iniciamos el proceso de admisión para familias interesadas en formar parte de nuestra comunidad.</p>
+                </div>
+              </article>
+              <article class="news-card">
+                <div class="card-image">
+                  <img src="galeria/deporte2.jpg" alt="Proyecto de lectura y creatividad">
+                </div>
+                <div class="news-content">
+                  <span class="badge">Académico</span>
+                  <h3>Proyecto de lectura y creatividad</h3>
+                  <p>Nuestros estudiantes desarrollan comprensión lectora, expresión oral y amor por los libros.</p>
+                </div>
+              </article>
+              <article class="news-card">
+                <div class="card-image">
+                  <img src="galeria/deporte.jpg" alt="Feria pedagógica institucional">
+                </div>
+                <div class="news-content">
+                  <span class="badge">Comunidad</span>
+                  <h3>Feria pedagógica institucional</h3>
+                  <p>Una jornada especial para compartir proyectos, talentos y aprendizajes con toda la comunidad.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="carousel-btn carousel-btn-next" type="button" id="newsNext" aria-label="Ver más noticias">›</button>
+        </div>
+        <div class="carousel-dots" id="newsDots" aria-label="Indicadores del carrusel"></div>
+        <!-- Duplica una tarjeta .news-card dentro de #newsTrack para seguir publicando noticias -->
+      </div>
+    </section>
+
+    <section class="section admission-section" id="admision">
+      <div class="container admission-grid">
+        <div class="admission-panel reveal">
+          <span class="section-kicker">Admisión</span>
+          <h2>Proceso claro, cercano y sencillo</h2>
+          <h3>Requisitos</h3>
+          <ul class="check-list">
+            <li>Partida de nacimiento del estudiante</li>
+            <li>Copia de DNI del estudiante y apoderado</li>
+            <li>Libreta o constancia de estudios anterior</li>
+            <li>Ficha de inscripción completa</li>
+          </ul>
+        </div>
+        <div class="admission-panel reveal">
+          <h3>Pasos del proceso</h3>
+          <ol class="steps-list">
+            <li>Solicita información por WhatsApp o formulario.</li>
+            <li>Agenda una visita o entrevista informativa.</li>
+            <li>Presenta la documentación requerida.</li>
+            <li>Confirma la vacante y completa la matrícula.</li>
+          </ol>
+          <a class="btn btn-primary" href="#contacto">Contactar para matrícula</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Contacto</span>
+          <h2>Estamos listos para acompañarte</h2>
+          <p>Escríbenos y conoce más sobre nuestra propuesta educativa, vacantes y proceso de admisión.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Reemplaza TU-CORREO@EJEMPLO.COM por el correo real que recibirá los mensajes -->
+          <form
+            class="contact-form reveal"
+            id="contactForm"
+            action="https://formsubmit.co/ajax/eduararies02@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde la web de Jesús Divino Maestro">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_autoresponse" value="Gracias por comunicarte con Jesús Divino Maestro. Hemos recibido tu mensaje y te responderemos pronto.">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" placeholder="Tu número de contacto" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntanos qué información necesitas" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Enviar consulta</button>
+            <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-info reveal">
+            <div class="contact-card">
+              <h3>Información institucional</h3>
+              <p><strong>Dirección:</strong> Av. Saul Cantoral</p>
+              <p><strong>Teléfono:</strong> +51 912 987 664</p>
+              <p><strong>Correo:</strong> jdivinomaestro@gmail.com</p>
+              <p><strong>Horario:</strong> Lunes a viernes de 8:00 a.m. a 4:00 p.m.</p>
+            </div>
+
+            <div class="map-wrapper">
+  <iframe
+    title="Ubicación del colegio"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.96880680571084!2d-77.0021667518782!3d-11.939781360185345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105db2058cf5517%3A0x5f74e414a10c886!2sColegio%20Jesus%20Divino%20Maestro!5e0!3m2!1ses-419!2spe!4v1776209798889!5m2!1ses-419!2spe"
+    width="150%"
+    height="350"
+    style="border:0;"
+    loading="lazy"
+  ></iframe>
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/logo-placeholder.png" alt="Logo referencial del colegio Jesús Divino Maestro">
+          <h3>Jesús Divino Maestro</h3>
+        </div>
+        <p>Educación Inicial y Primaria con una propuesta moderna, cercana y centrada en valores.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Av. Saul Cantoral</p>
+        <p>+51 912 987 664</p>
+        <p>jdivinomaestro@gmail.com</p>
+      </div>
+      <div>
+        <h4>Redes sociales</h4>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-facebook"></use></svg>
+            <span>Facebook</span>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-instagram"></use></svg>
+            <span>Instagram</span>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-youtube"></use></svg>
+            <span>YouTube</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>Copyright © 2025 Ed. Designed &amp; Developed by Eduar Garcia.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
